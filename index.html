@@ -83,7 +83,7 @@ p a{
     <h1>Join Our Telegram Community</h1>
     <h2>Market updates, analysis & educational insights</h2>
 
-    <a href="https://telegram.me/+Cu_27XBwWdw1MWY1" class="btn">Join on Telegram</a>
+    <a href="https://telegram.me/+Cu_27XBwWdw1MWY1" class="btn" onclick="subscribeEvent()">Join on Telegram</a>
 
     <img src="LOGO.jpg">
 
@@ -93,8 +93,16 @@ p a{
     </p>
 
 </div>
-
+<script>
+function subscribeEvent(){
+  fbq('track', 'Subscribe', {
+    value: 1.00,
+    currency: 'INR'
+  });
+}
+</script>
 </body>
 </html>
+
 
 
